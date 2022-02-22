@@ -14,12 +14,10 @@ fs.writeFile('reto1.json', myJson)
     // console.log("Entra al write");
     return fs.readFile('reto1.json',"utf-8")
 })
-
 .then(function(data){
 
     console.log(data);
 })
-
 .catch(function(error){
     console.log(error);
 })

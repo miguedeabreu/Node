@@ -24,43 +24,43 @@ function pregunta(pregunta){
 
 // THEN AND CATCH
 
-let persona = new Person();
+// let persona = new Person();
 
-pregunta("What is your name? ")
-.then(function(name){
+// pregunta("What is your name? ")
+// .then(function(name){
 
-    persona.name = name;
-    console.log('Your name is: ' + name);
+//     persona.name = name;
+//     console.log('Your name is: ' + name);
 
-    return pregunta("What is your surname? ")
-})
-.then(function(surname){
+//     return pregunta("What is your surname? ")
+// })
+// .then(function(surname){
 
-    persona.surname = surname;
-    console.log('Your surname is: ' + surname);
+//     persona.surname = surname;
+//     console.log('Your surname is: ' + surname);
 
-    return pregunta("What is your age? ")
-})
-.then(function(age){
+//     return pregunta("What is your age? ")
+// })
+// .then(function(age){
     
-    persona.age = age;
-    console.log('Your age is: ' + age);
+//     persona.age = age;
+//     console.log('Your age is: ' + age);
 
-    let myJson = JSON.stringify(persona);
+//     let myJson = JSON.stringify(persona);
 
-    return fs.writeFile('reto2.json', myJson)
-})
-.then(function(){
+//     return fs.writeFile('reto2.json', myJson)
+// })
+// .then(function(){
 
-    return fs.readFile('reto2.json',"utf-8")
-})
-.then(function(data){
+//     return fs.readFile('reto2.json',"utf-8")
+// })
+// .then(function(data){
 
-    console.log(data);
-})
-.catch(function(error){
-    console.log(error);
-})
+//     console.log(data);
+// })
+// .catch(function(error){
+//     console.log(error);
+// })
 
 
 
