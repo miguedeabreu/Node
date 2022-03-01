@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,500&family=Barriecito&family=Faster+One&family=Press+Start+2P&family=Titan+One&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="reto1.css">
+    
+    
+</head>
+<body>
+
+    <main>
+
+        <section class="cuerpo_principal">
+
+            <section class="principal1">
+
+                <section class="izquierda1">
+                    <h1 class="titulo">BUSCA A TU FAMOSO FAVORITO</h1>
+                    <div class="busca_id">
+                        <input type="text" class="input__text" id="id" name="id" placeholder=" Introduce un número*">
+                    </div>
+                    <div class="imagenes">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagenes/ca1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagenes/ca2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagenes/ca3.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="derecha1">
+                    <h1 class="titulo">¿NO LO ENCUENTRAS?</h1>
+                    <h2 class="titulo">créalo mediante este formulario</h2>
+                    <div class="formulario">
+                        <input type="text" class="input__text2" id="name" required name="" placeholder=" Introduce su nombre*">
+                        <input type="text" class="input__text2" id="age" required name="" placeholder=" Introduce su edad*">
+                        <input type="text" class="input__text2" id="genre" required name="" placeholder=" Introduce su sexo*">
+                        <input type="text" class="input__text2" id="weight" required name="" placeholder=" Introduce su peso*">
+                        <input type="text" class="input__text2" id="height" required name="" placeholder=" Introduce su altura*">
+                    </div>
+                </section>
+
+            </section>
+
+
+            <section class="principal2">
+                <div class="botones">
+                    <button type="reset" 
+                            class="btn btn-success"
+                            onclick = "getProfesional()">
+                            MOSTRAR
+                    </button>
+                    <button type="button" 
+                            class="btn btn-primary"
+                            onclick = "postProfesional()">
+                            CREAR
+                    </button>
+                    <button type="button" 
+                            class="btn btn-warning"
+                            onclick = "putProfesional()">
+                            ACTUALIZAR
+                    </button>
+                    <button type="button"
+                            class="btn btn-danger"
+                            onclick = "deleteProfesional()">
+                            ELIMINAR
+                    </button>
+                </div>
+            </section>
+
+            <section class="principal3" id="final"></section>
+
+            <!-- Bloque Toast-->
+
+            <div id = "toast" class="toast position-fixed top-0 end-0 p-3 align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                <div id ="toastText" class="toast-body">
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script src ="fetch1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

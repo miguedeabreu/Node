@@ -1,0 +1,116 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.cuerpo_principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.principal1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* -------- LADO IZQUIERDO DE PRINCIPAL 1---------- */
+
+.izquierda1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.titulo{
+    font-family: 'Barriecito', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.busca_id{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input__text{
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.input__text:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.imagenes{
+    width: 320px;
+    height: 240px;
+    margin-top: 15px;
+}
+
+.carousel-inner{
+    border-radius: 5%;
+}
+
+/* -------- LADO DERECHO DE PRINCIPAL 1---------- */
+
+.derecha1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.input__text2{
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+/* ---------BOTONES--------- */
+
+.principal2{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.botones{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* ---------PRINCIPAL 3--------- */
+
+.principal3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+}
